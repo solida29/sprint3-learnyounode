@@ -1,9 +1,10 @@
 const fs = require('fs');
 
 const fileContentAsync = fs.readFile(
-  process.argv[2],
-  'utf8',
+  process.argv[2], // Nombre del archivo
+  'utf8', // Caracteres UTF8 para que esté en formato string y no tener que pasar por toString()
   (err: unknown, data: string) => {
+    // Callback
     if (err) {
       return new Error('Error');
     }
