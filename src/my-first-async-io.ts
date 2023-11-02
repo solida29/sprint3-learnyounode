@@ -1,4 +1,4 @@
-const fs = require('fs');
+import fs from 'fs';
 
 const fileContentAsync = fs.readFile(
   process.argv[2], // Nombre del archivo

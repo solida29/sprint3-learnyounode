@@ -1,4 +1,5 @@
-const fs = require('fs'); // modulo de file system de Node
+import fs from 'fs';
+// Modulo de file system de Node
 
 const fileContent: object = fs.readFileSync(process.argv[2]);
 // Leemos el archivo dado en process.argv[2] que tendrá formato de buffer
