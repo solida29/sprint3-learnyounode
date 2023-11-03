@@ -7,10 +7,11 @@ const fileContentAsync = fs.readFile(
     // Callback
     if (err) {
       return new Error('Error');
+    } else {
+      const docLines = data.split('\n');
+      const numLines = docLines.length - 1;
+      process.stdout.write(numLines.toString() + '\n');
     }
-    const docLines = data.split('\n');
-    const numLines = docLines.length - 1;
-    process.stdout.write(numLines.toString() + '\n');
   }
 );
 fileContentAsync;
