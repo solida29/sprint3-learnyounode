@@ -13,15 +13,21 @@ import http from 'http';
 // const urls = [process.argv[2], process.argv[3], process.argv[4]];
 
 function collectContent(url: string) {
-  let result: string = '';
-  http.get(url, (response) => {
-    response.setEncoding('utf8');
-    response.on('data', (chunk: WritableStream) => {
-      result += chunk;
-    });
-    response.on('end', () => {
-      return result;
-    });
+  return new Promise((resolve, reject) => {
+    let result: string = '';
+    http
+      .get(url, (response) => {
+        response.setEncoding('utf8');
+        response.on('data', (chunk: WritableStream) => {
+          result += chunk;
+        });
+        response.on('end', () => {
+          resolve(result);
+        });
+      })
+      .on('error', (error) => {
+        reject(error);
+      });
   });
 }
 
