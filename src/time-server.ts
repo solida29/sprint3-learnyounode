@@ -1,6 +1,6 @@
 import net from 'net';
 
-const portNumber = process.argv[2];
+const portNumber = Number(process.argv[2]);
 
 const server = net.createServer(function (socket) {
   // logique de gestion de la socket
@@ -31,4 +31,3 @@ function todayDate() {
   console.log(result);
   return result;
 }
-todayDate();
