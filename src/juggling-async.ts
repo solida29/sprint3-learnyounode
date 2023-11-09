@@ -10,7 +10,7 @@ Compter les fonctions de rappels et une des manières basiques de gérer l’asy
 
 import http from 'http';
 
-// const urls = [process.argv[2], process.argv[3], process.argv[4]];
+const urls = [process.argv[2], process.argv[3], process.argv[4]];
 
 function collectContent(url: string) {
   return new Promise((resolve, reject) => {
@@ -34,12 +34,19 @@ function collectContent(url: string) {
 type Output = unknown | string;
 
 async function collectAllContent(): Promise<Output> {
+  let content: string | unknown = '';
+  let allContent = '';
+
   try {
-    const content1: Output = await collectContent(process.argv[2]);
-    const content2: Output = await collectContent(process.argv[3]);
-    const content3: Output = await collectContent(process.argv[4]);
-    const allcontent = content1 + '\n' + content2 + '\n' + content3;
-    return allcontent;
+    for (let i = 0; i < urls.length; i++) {
+      content = await collectContent(urls[i]);
+      if (i < urls.length - 1) {
+        allContent += content + '\n';
+      } else {
+        allContent += content;
+      }
+    }
+    return allContent;
   } catch (error) {
     console.log(error);
     return error;
