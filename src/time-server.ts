@@ -28,6 +28,5 @@ function todayDate() {
   const minutes = format(date.getMinutes());
 
   result = year + '-' + month + '-' + day + ' ' + hours + ':' + minutes + '\n';
-  console.log(result);
   return result;
 }
