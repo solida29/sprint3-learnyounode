@@ -1,83 +1,41 @@
-# Ejemplo básico de TS
+https://github.com/solida29/sprint3_learnyounode
 
----
+# Entrega 3.1: LearnYouNode
 
-En este ejemplo básico hay:
+En aquesta entrega farem servir LearYouNode com a introducció a Node. Aprendràs els següents conceptes:
 
-- ESLint
-- Prettier
-- ts-jest
-- nodemon
-- VSCode Debugging
-- Github Actions
-- Pequeño ejemplo de código funcional con import
+- Introducció a Node.js i la programació del costat del servidor
+- Utilització del mòdul "fs" per llegir i escriure fitxers en el sistema de fitxers del servidor
+- Creació d'un servidor web bàsic i processament de les sol·licituds HTTP entrants
+- Enviament de sol·licituds HTTP a altres servidors i processament de les respostes
+- Ús del mòdul "async" per treballar amb funcions asíncrones i callbacks
+  A través d'aquests coneixements es poden construir aplicacions web i de servidor més complexes i útils.
 
-La configuración del debugger apunta a src/index.ts como archivo de inicio del proyecto.
+-> github.com/workshopper/learnyounode
 
-Comandos:
+### Nivell 1
 
-Testing:
+Fes servir el programa LearnYouNode per verificar que els exercicis estan ben resolts.
 
-```sh
-npm run test
-```
+### Nivell 2
 
-Ejecuta los tests ignorando los que existan en dist/
+Crea els teus propis scripts (i l'escenari que calgui) de cada exercici per provar cadascun d'ells.
 
-Prettier format:
+### Nivell 3
 
-```sh
-npm run prettier-format
-```
+Fes els exercicis amb TypeScript i afegeix testing per comprovar el correcte funcionament de cadascun.
 
-Ejecuta manualmente el prettier en el proyecto, recomiendo instalar la extensión prettier y que se autoejecute al guardar.
+<hr>
 
-Watcher:
+### Nivell 1
 
-```sh
-npm run dev:watcher
-```
+Se ejecuta el programa desde la Terminal con Learnyounode
+`learnyounode verify program.js`
 
-Ejecuta nodemon usando src/index.ts como archivo inicial
+### Nivell 2
 
-Dev Run:
+...
 
-```sh
-npm run dev:run
-```
+### Nivell 3
 
-Ejecuta el proyecto sin watcher
-
-Build:
-
-```sh
-npm run build
-```
-
-Transpila el proyecto en dist/
-
----
-
-## Debugger
-
-en el archivo .vscode/launch.json está la configuración del debugger.
-
-```json
-{
-  // Use IntelliSense to learn about possible attributes.
-  // Hover to view descriptions of existing attributes.
-  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "type": "node",
-      "request": "launch",
-      "name": "Lanza debug",
-      "preLaunchTask": "tsc: build - tsconfig.json",
-      "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}/src/index.ts",
-      "outFiles": ["${workspaceFolder}/dist/**/*.js"]
-    }
-  ]
-}
-```
+En la carpeta src están los programas en Ts.
