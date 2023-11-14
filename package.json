@@ -19,7 +19,9 @@
     "ex08": "npx ts-node src/08_http-collect.ts http://example.com/",
     "ex09": "npx ts-node src/09_juggling-async.ts http://example.com/ http://nginx.org/ http://example.edu/",
     "ex10server": "npx ts-node src/10_time-server.ts 3000",
-    "ex10client": "npx ts-node src/10_clientTestSocket.ts 3000"
+    "ex10client": "npx ts-node src/clientTestSocket.ts 3000",
+    "ex11server": "npx ts-node src/11_http-file-server.ts 3000 PATH a poner",
+    "ex11client": "npx ts-node src/clientTestSocket.ts 3000"
   },
   "keywords": [],
   "author": "",
