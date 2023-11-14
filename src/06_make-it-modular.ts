@@ -1,5 +1,5 @@
-// import { printListFiles } from './mymodule';
-const printListFiles = require('./mymodule');
+// import { printListFiles } from './06_mymodule';
+const printListFiles = require('./06_mymodule');
 
 printListFiles(
   process.argv[2],

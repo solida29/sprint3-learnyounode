@@ -29,7 +29,7 @@ Fes els exercicis amb TypeScript i afegeix testing per comprovar el correcte fun
 
 ### Nivell 1
 
-Se ejecuta el programa desde la Terminal con Learnyounode
+Hay que transpilar todos los archivos de la carpeta src y ejecutar los js de la carpeta dist, con el programa Learnyounode, desde la Terminal:
 `learnyounode verify program.js`
 
 ### Nivell 2
