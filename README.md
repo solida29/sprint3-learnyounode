@@ -38,18 +38,56 @@ learnyounode verify program.js
 
 ### Nivell 2
 
-Para ejecutar los scripts se puede hacer:
+- Para ejecutar los scripts de los ejercicios 01 a 09, se se puede hacer con:
 
 ```
 npx ntl
 ```
 
-o uno por uno con:
+y ejecutar el ejercicio deseado.
+También se puede hacer uno por uno con:
 
 ```
 npx run ex01
 ```
 
+- Para los ejercicios 10, 11, 12 y 13, hay que primero ejecutar el server en la Terminal vía los metodos arriba, y después el cliente en otra Terminal, para que el cliente y el server levantado puedan comunicar entre si.
+
+- Para el ejercicio 10, primero en una Terminal, levantamos el servidor ejecutando:
+
+```
+npx run ex10server
+```
+
+Después, abrimos otra Terminal y ejecutamos:
+
+```
+npx run exClient
+```
+
+- Para el ejercicio 11, primero en una Terminal, levantamos el servidor ejecutando:
+
+```
+npx run ex11server
+```
+
+Después, abrimos otra Terminal y ejecutamos:
+
+```
+npx run exClient
+```
+
+De la misma manera para el 12 y el 13.
+Para ejecutar el cliente, usamos siempre el mismo script para los ejercicios 10 a 13.
+
 ### Nivell 3
 
 En la carpeta src están los programas en Ts.
+
+```
+
+```
+
+```
+
+```
