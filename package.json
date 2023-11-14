@@ -14,7 +14,11 @@
     "ex03": "npx ts-node src/03_my-first-io.ts src/ScriptTest.md",
     "ex04": "npx ts-node src/04_my-first-async-io.ts src/ScriptTest.md",
     "ex05": "npx ts-node src/05_filtered-ls.ts src ts",
-    "ex06": "npx ts-node src/06_make-it-modular.ts src/ScriptTest.md"
+    "ex06": "npx ts-node src/06_make-it-modular_nivel2.ts src ts",
+    "ex07": "npx ts-node src/07_http-client.ts http://example.com",
+    "ex08": "npx ts-node src/08_http-collect.ts http://example.com/",
+    "ex09": "npx ts-node src/09_juggling-async.ts http://example.com/ http://nginx.org/ http://example.edu/",
+    "ex10": "npx ts-node src/10_time-server.ts 3000" 
   },
   "keywords": [],
   "author": "",

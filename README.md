@@ -32,15 +32,22 @@ Fes els exercicis amb TypeScript i afegeix testing per comprovar el correcte fun
 Hay que transpilar todos los archivos de la carpeta src y ejecutar los js de la carpeta dist, con el programa Learnyounode, desde la Terminal:
 
 ```
+learnyounode
 learnyounode verify program.js
 ```
 
 ### Nivell 2
 
-Para ejecutar los script:
+Para ejecutar los scripts se puede hacer:
 
 ```
 npx ntl
+```
+
+o uno por uno con:
+
+```
+npx run ex01
 ```
 
 ### Nivell 3
