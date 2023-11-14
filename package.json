@@ -18,7 +18,8 @@
     "ex07": "npx ts-node src/07_http-client.ts http://example.com",
     "ex08": "npx ts-node src/08_http-collect.ts http://example.com/",
     "ex09": "npx ts-node src/09_juggling-async.ts http://example.com/ http://nginx.org/ http://example.edu/",
-    "ex10": "npx ts-node src/10_time-server.ts 3000" 
+    "ex10server": "npx ts-node src/10_time-server.ts 3000",
+    "ex10client": "npx ts-node src/10_clientTestSocket.ts 3000"
   },
   "keywords": [],
   "author": "",
