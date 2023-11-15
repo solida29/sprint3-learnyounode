@@ -77,16 +77,8 @@ Después, abrimos otra Terminal y ejecutamos:
 npx run ex11Client
 ```
 
-De la misma manera para el 12 y el 13.
+- De la misma manera para el 12 y el 13.
 
 ### Nivell 3
 
 En la carpeta src están los programas en Ts.
-
-```
-
-```
-
-```
-
-```
