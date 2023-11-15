@@ -22,7 +22,7 @@ const server = http.createServer((request, response) => {
   const parsedUrl = new URL(request.url!, `http://localhost:${portNumber}`);
   // peticion del cliente.
   // request.url! para indicar que no será null o undefined
-  const date = parsedUrl.searchParams.get('iso');
+  const date = parsedUrl.searchParams.get('iso'); //'iso' es el nombre del parametro que está en la url /api/parsetime?iso=
   const time = new Date(date || '');
   // Si date != null o undefined, se utiliza.
   // Si date = null o undefined, el resultado es ''

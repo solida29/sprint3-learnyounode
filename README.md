@@ -62,7 +62,7 @@ npx run ex10server
 Después, abrimos otra Terminal y ejecutamos:
 
 ```
-npx run exClient
+npx run ex10Client
 ```
 
 - Para el ejercicio 11, primero en una Terminal, levantamos el servidor ejecutando:
@@ -74,11 +74,10 @@ npx run ex11server
 Después, abrimos otra Terminal y ejecutamos:
 
 ```
-npx run exClient
+npx run ex11Client
 ```
 
 De la misma manera para el 12 y el 13.
-Para ejecutar el cliente, usamos siempre el mismo script para los ejercicios 10 a 13.
 
 ### Nivell 3
 
