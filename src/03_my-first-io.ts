@@ -1,13 +1,10 @@
 import fs from 'fs';
 // Modulo de file system de Node
 
-const fileContent: object = fs.readFileSync(process.argv[2]);
+const fileContent = fs.readFileSync(process.argv[2], 'utf8');
 // Leemos el archivo dado en process.argv[2] que tendrá formato de buffer
-const fileBufferToString: string = fileContent.toString();
-// Pasamos el formato buffer a toString
-const fileLines = fileBufferToString.split('\n');
+const fileLines = fileContent.split('\n').length - 1;
 // Pasamos el buffer en un array, separado por los \n
-const lines = fileLines.length - 1;
 // Medimos el array para saber el numero de líneas -1
-process.stdout.write(lines.toString() + '\n');
+process.stdout.write(fileLines.toString() + '\n');
 // usamos stdout en lugar de console.log(lines);

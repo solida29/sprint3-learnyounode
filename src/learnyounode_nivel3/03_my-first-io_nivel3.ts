@@ -1,10 +1,8 @@
 import fs from 'fs';
 // Modulo de file system de Node
 
-export function fileBuffer(someFile: Buffer | string) {
-  const fileContent: object = fs.readFileSync(someFile);
-  const fileBufferToString: string = fileContent.toString();
-  const fileLines = fileBufferToString.split('\n');
-  const lines = fileLines.length - 1;
-  return lines.toString() + '\n';
+export function fileBuffer() {
+  const fileContent = fs.readFileSync(process.argv[2], 'utf8');
+  const fileLines = fileContent.split('\n').length - 1;
+  return fileLines;
 }
