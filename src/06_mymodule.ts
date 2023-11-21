@@ -15,7 +15,7 @@ module.exports = function printListFiles(
     // directory reading
     // it is idiomatic to check for errors and do early-returns within callback functions
     if (err) {
-      return callback(err); // early return
+      return callback(err.message, []); // early return
       // return err; // para script
     } else {
       // no error, continue doing cool things with `data`
